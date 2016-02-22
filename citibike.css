@@ -1,0 +1,758 @@
+body {
+  font: 14px Verdana;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background: white;
+  color: rgba(255, 255, 255, 0.85);
+  width: 100%;
+  height: 100%;
+  text-align:justify;
+  text-justify:inter-word;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+}
+
+#mode_buttons_container {      
+  background: rgba(255, 255, 255, 1); 
+  padding:10px;  
+}
+
+.mode_vis_buttons_container {      
+  background: rgba(255, 255, 255, 1); 
+  /*padding:10px;
+  margin: 20px;*/
+  clear:both;  
+}
+
+.mode_vis_button { 
+  margin: 2px;
+  background: rgba(200, 200, 200, 1);  
+  color: rgba(0, 0, 0, 1); 
+  padding:5px;
+  /*border:3px double;*/
+  box-shadow:0 0 4px 1px #222;
+  border-color:rgba(0, 0, 0, 1);
+  width: 100px;
+  height: 25px;
+  float:left;
+  text-align:center;    
+  font: bold 10px Verdana; 
+  display: table-cell; 
+  /*line-height: 25px;*/
+  display: inline-block;
+  vertical-align: middle;
+  cursor:pointer;
+  /*line-height: normal;     */
+}
+
+#bot_container {      
+  background: rgba(255, 255, 255, 1);  
+  clear:both;
+}
+
+.mode_vis_container {
+  position:absolute;   
+  top:0px;
+  left:0px;     
+  background: rgba(255, 255, 255, 1);
+  width: 1910px;  
+  height: 960px;  
+  border:1px solid;
+  clear:both;
+}
+
+.mode_container {
+  position:absolute;   
+  top:55px;
+  left:5px;     
+  background: rgba(255, 255, 255, 1);
+  width: 100%;
+  height: 100%;
+  border:1px solid;
+  clear:both;
+}
+
+#modeVisContainerAnalyticsStationsUsageContainerRightContainer {      
+  background: rgba(255, 255, 255, 1);
+  width: 67%;  
+  height: 98%;
+  color: rgba(30, 30, 30, 1); 
+  border:1px solid;
+  border-color: gray;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  float:right; 
+  overflow:auto;
+}
+
+#modeVisContainerAnalyticsDayOfWeekModelsContainerLeftContainer {      
+  background: rgba(255, 255, 255, 1);
+  /*width: 50%;  */
+  width: 30%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1);   
+  margin-right: 10px;
+  float:left; 
+}
+
+#modeVisContainerAnalyticsDayOfWeekModelsContainerMiddleContainer {      
+  background: rgba(255, 255, 255, 1);
+  border:1px solid;
+  width: 40%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  margin-left: 10px;
+  margin-right: 10px;
+  float:left; 
+}
+
+#modeVisContainerAnalyticsDayOfWeekModelsContainerRightContainer {      
+  background: rgba(255, 255, 255, 1);
+  width: 25%;  
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  border:1px solid;
+  /*padding-top: 10px;*/
+  /*padding-left: 10px;*/
+  margin-left: 10px;
+  margin-right: 30px;
+  float:left; 
+  /*overflow:auto;*/
+}
+
+#modeVisContainerAnalyticsCalendarViewContainerLeftContainer {      
+  background: rgba(255, 255, 255, 1);
+  /*width: 50%;  */
+  width: 20%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1);   
+  margin-right: 10px;
+  float:left; 
+}
+
+#modeVisContainerAnalyticsCalendarViewContainerMiddleContainer {      
+  background: rgba(255, 255, 255, 1);
+  border:1px solid;
+  width: 50%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  margin-left: 10px;
+  margin-right: 10px;
+  float:left; 
+}
+
+#modeVisContainerAnalyticsCalendarViewContainerRightContainer {      
+  background: rgba(255, 255, 255, 1);
+  width: 25%;  
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  border:1px solid;
+  /*padding-top: 10px;*/
+  /*padding-left: 10px;*/
+  margin-left: 10px;
+  margin-right: 30px;
+  float:left; 
+  /*overflow:auto;*/
+}
+
+#modeVisContainerAnalyticsTripsViewContainerLeftContainer {      
+  background: rgba(255, 255, 255, 1);
+  /*width: 50%;  */
+  width: 20%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1);   
+  margin-right: 10px;
+  float:left; 
+}
+
+#modeVisContainerAnalyticsTripsViewContainerMiddleContainer {      
+  background: rgba(255, 255, 255, 1);
+  border:1px solid;
+  width: 50%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  margin-left: 10px;
+  margin-right: 10px;
+  float:left; 
+}
+
+#modeVisContainerAnalyticsTripsViewContainerRightContainer {      
+  background: rgba(255, 255, 255, 1);
+  width: 25%;  
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  border:1px solid;
+  /*padding-top: 10px;*/
+  /*padding-left: 10px;*/
+  margin-left: 10px;
+  margin-right: 30px;
+  float:left; 
+  /*overflow:auto;*/
+}
+
+#modeVisContainerAnalyticsAMViewContainerLeftContainer {
+  background: rgba(255, 255, 255, 1);
+  /*width: 50%;  */
+  width: 20%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1);
+  margin-right: 10px;
+  float:left;
+}
+
+
+#modeVisContainerAnalyticsAMViewContainerMiddleContainer {
+  background: rgba(255, 255, 255, 1);
+  border:1px solid;
+  width: 75%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1);
+  margin-left: 5px;
+  margin-right: 5px;
+  float:left;
+  overflow: scroll;
+}
+
+
+#modeVisContainerAnalyticsAMViewContainerRightContainer {
+  background: rgba(255, 255, 255, 1);
+  width: 25%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1);
+  border:1px solid;
+  /*padding-top: 10px;*/
+  /*padding-left: 10px;*/
+  margin-left: 10px;
+  margin-right: 30px;
+  float:left;
+}
+
+#modeVisContainerAnalyticsFlowEstimationContainerRightContainer {      
+  background: rgba(255, 255, 255, 1);
+  width: 45%;  
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  border:1px solid;
+  /*padding-top: 10px;*/
+  padding-left: 10px;
+  margin-left: 10px;
+  margin-right: 30px;
+  float:left; 
+  /*overflow:auto;*/ 
+}
+
+#modeVisContainerAnalyticsFlowEstimationContainerLeftContainer {      
+  background: rgba(0, 0, 0, 0);
+  width: 40%;  
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  float:left; 
+}
+
+#filterTable div {
+  width: 600px;
+  height: 1000px;
+  background: gray;
+}
+
+.filterCell {
+  stroke: white;
+}
+
+.brush .extent {
+  stroke: #000;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.stationUsageChartStationName {
+  color: rgba(0, 0, 0, 1);
+  font: bold 14px Verdana;
+  margin: 5px;
+  padding:5px;
+  background: rgba(255, 255, 255, 1);
+  float: left;
+  width: 93.5%;
+}
+
+.stationUseChartDaysClearButton {
+  color: #333;
+  font: bold 14px Verdana;
+  margin: 5px;
+  padding:5px;
+  background: rgba(219, 219, 219, 1);
+  float: right;
+  width: 3%;
+  cursor:pointer; 
+}
+
+.stationUsageClearButton {
+  color: #333;
+  font: bold 14px Verdana;
+  margin: 0px 0px 10px 0px;
+  padding:5px;
+  background: rgba(219, 219, 219, 1);
+  float: right;  
+  cursor:pointer; 
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #222;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+  fill: #222;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+.activityChartTitle {
+  fill: #AAA;
+  stroke: #AAA;
+  shape-rendering: crispEdges;
+}
+
+.stationUsageChartTitle {
+  fill: #222;
+  stroke: #222;
+  shape-rendering: crispEdges;
+}
+
+.stationtodauUsegeChartUpdateButton {
+  fill: #444;
+  stroke: #444;
+  shape-rendering: crispEdges;
+}
+
+/*.stationtodauUsegeChartUpdateButton {
+  color: #333;
+  font: bold 14px Verdana;
+  margin: 0px 0px 10px 0px;
+  padding:5px;
+  background: rgba(10, 10, 10, 1);
+  float: right;  
+  cursor:pointer; 
+}*/
+
+.stationTodayUsageChartTitle {
+  fill: #d95f0e;
+  stroke: #d95f0e;
+  shape-rendering: crispEdges;
+}
+
+.timelineTitle {
+  fill: #AAA;
+  stroke: #AAA;
+  shape-rendering: crispEdges;
+}
+
+.modelChartTitle {
+  fill: #AAA;
+  stroke: #AAA;
+  shape-rendering: crispEdges;
+}
+
+#top_container {
+  margin: 0;  
+  border:5px solid;
+  border-color:rgba(0, 0, 0, 1);  
+  width: 100% - 1px; 
+}
+
+#title {
+  padding: 10px;  
+  color: rgba(16, 0, 65, 1);   
+  text-align:justify;
+  text-justify:inter-word;
+  font-size: large;   
+  background: rgba(220, 220, 220, 1); 
+  box-shadow: 20px 20px 15px rgba(16, 0, 65, 1); 
+}
+
+
+
+
+
+.control_label {        
+  color: #AAA;
+  font: 14px Verdana;
+  margin: 5px;
+  padding:5px;
+  background: rgba(0, 0, 0, 1);
+  float: left;  
+}
+
+#frequencySlider {        
+  width: 200px;  
+  clear: both;
+  margin: 15px;
+  
+}
+
+.mode_button {      
+  background: rgba(255, 255, 255, 1);  
+  color: rgba(0, 0, 0, 1); 
+  padding:5px;
+  border:2px solid;
+  border-color:rgba(0, 0, 0, 1);
+  width: 100px;
+  float:left;
+  text-align:center;
+  font: bold 14px Verdana;
+  cursor:pointer;  
+}
+
+
+
+
+
+
+
+
+#modeVisContainerAnalyticsRadialHistoryContainerLeftContainer {      
+  background: rgba(0, 0, 0, 0);
+  /*width: 50%;  */
+  width: 30%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  float:left; 
+}
+
+#modeVisContainerAnalyticsRadialHistoryContainerRightContainer {      
+  background: rgba(0, 0, 0, 1);
+  width: 47%;  
+  height: 98%;
+  color: rgba(30, 30, 30, 1); 
+  border:1px solid;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  float:right; 
+  overflow:auto;
+}
+
+#modeVisContainerUseCitibikeNowContainerLeftContainer {      
+  background: rgba(0, 0, 0, 0);
+  /*width: 50%;  */
+  width: 30%;
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  float:left; 
+}
+
+#modeVisContainerUseCitibikeNowContainerRightContainer {      
+  background: rgba(0, 0, 0, 1);
+  width: 47%;  
+  height: 98%;
+  color: rgba(30, 30, 30, 1); 
+  border:1px solid;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+  float:right; 
+  overflow:auto;
+}
+
+#modeVisContainerAnalyticsStationsUsageContainerLeftContainer {      
+  background: rgba(0, 0, 0, 0);
+  width: 30%;  
+  height: 100%;
+  color: rgba(30, 30, 30, 1); 
+  float:left; 
+}
+
+#page_container {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  clear: both;
+}
+
+#top_panel {
+  width: 1760px;
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.map_container {
+  z-index: 10;  
+  visibility: inherit;
+}
+
+#view_options_container {
+  position: absolute;
+  width: 30px;
+  height: 120px;
+  left: 1580px;
+  top: 100px;
+}
+
+.view_option {
+  width: 100%;
+  height: 30px;
+  margin: 0;
+  font-size: 10pt;
+  z-index: 100000;
+  margin-bottom: 7px;
+}
+
+.view_option img {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  box-shadow:0 0 1px 1px #666;
+}
+
+.view_option img:hover {
+  cursor: hand;
+  cursor: pointer;
+  box-shadow:0 0 2px 2px #999;
+}
+
+.view_option img.selected {
+  box-shadow:0 0 3px 3px #ccc;
+}
+
+#charts_panel {
+  width: 1600px;
+  margin: 0 auto;
+  clear: both;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 12px;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: #ddd;
+  border: solid 1px #aaa;
+  border-radius: 8px;
+  pointer-events: none;
+  color: black;
+}
+
+/* Positioning is bad, really bad! */
+#add_to_gallery {
+  position: absolute;
+  margin-left: 1530px;
+  margin-top: -48px;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  padding: 2px;
+  font-size: 10pt;
+  text-align: center;
+  stroke: white;
+  background: #282828;
+  border: solid 1px #aaa;
+  z-index: 100000;
+}
+
+#add_to_gallery:hover {
+  cursor: hand;
+  cursor: pointer;
+}
+
+#color_table_container {
+  position: absolute;
+  margin-left: 1460px;
+  margin-top: 550px;
+  text-align: center;
+  width: 25px;
+  height: 115px;
+  padding: 0px;
+  z-index: 100000;
+}
+
+#color_table_container table {
+  width: 100%;
+  height: 100%;
+}
+
+#color_table_container table:hover {
+  cursor: hand;
+  cursor: pointer;
+}
+
+#gallery {
+  width: 1600px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#gallery_items {
+  width: 100%;
+  margin: 5px;
+}
+
+#gallery_items .item {
+  display: inline-block;
+  width: 310px;
+  height: 300px;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 5px;
+  box-shadow:0 0 1px 1px #333333;
+}
+
+#gallery_items .item img {
+  width: 310px;
+  height: 198px;
+  box-shadow:0 0 1px 1px #333333;
+}
+
+#gallery_items .item p {
+  margin: 5px;
+}
+
+
+/*model calendar stuff*/
+
+.day {
+  fill: #333;
+  stroke: rgb(20,20,20);
+}
+
+.month {
+  fill: none;
+  stroke: #000;
+  /*stroke: rgb(37,0,95);*/
+  stroke-width: 4px;
+}
+
+.RdYlGn .q0-11{fill:rgb(165,0,38)}
+.RdYlGn .q1-11{fill:rgb(215,48,39)}
+.RdYlGn .q2-11{fill:rgb(244,109,67)}
+.RdYlGn .q3-11{fill:rgb(253,174,97)}
+.RdYlGn .q4-11{fill:rgb(254,224,139)}
+.RdYlGn .q5-11{fill:rgb(255,255,191)}
+.RdYlGn .q6-11{fill:rgb(217,239,139)}
+.RdYlGn .q7-11{fill:rgb(166,217,106)}
+.RdYlGn .q8-11{fill:rgb(102,189,99)}
+.RdYlGn .q9-11{fill:rgb(26,152,80)}
+.RdYlGn .q10-11{fill:rgb(0,104,55)}
+
+/*.stations, .stations svg {
+  position: absolute;
+}*/
+
+/*.stationsUsageStation svg {
+  position: absolute;
+  width: 60px;
+  height: 20px;
+  padding-right: 100px;
+  font: 10px sans-serif;
+}*/
+
+#plot_container {
+  display: inline-block;
+  width: 1475px;
+  height: 940px;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.canvases_container {
+  width: 100%;
+  height: 70%;    
+  box-shadow:0 0 2px 2px #333333;
+  z-index: 10000;  
+  margin: 5px;
+}
+
+.canvas_container {
+  width: 100%;
+  height: 100%;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+  visibility: inherit;
+}
+
+.canvas_container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#plot_container #labels {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#plot_container #labels text {
+  fill: white;
+}
+
+.leftLabels, .rightLabels {
+  font-size: 7pt;
+}
+
+.timeLabelsTop, .timeLabelsBottom {
+  font-size: 7pt;
+}
+
+.brush .extent {
+  stroke: #000000;
+  fill-opacity: .06;
+  shape-rendering: crispEdges;
+}
+
+.matrixAxis path,
+.matrixAxis line {
+  fill: none;
+  stroke: #000000;  
+}
+.matrixAxis text {
+  fill: #000000;
+  stroke: none;  
+}
+
+.background {
+  fill: #eee;
+}
+
+line {
+  stroke: #FFF;
+}
+
+text.active {
+  fill: red;
+  font-size: 10px;
+
+}
+
+.originSelection
+{
+
+  opacity: 1;
+  fill : rgb(0,34,255);
+  stroke: white;
+  stroke-width: 1.5px;
+}
+
+.intersectSelection
+{
+
+  opacity: 1;
+  fill : rgb(122,10,113);
+  stroke: white;
+  stroke-width: 1.5px;
+}
+.destSelection
+{
+
+  opacity: 1;
+  fill : rgb(255,0,0);
+  stroke: white;
+  stroke-width: 1.5px;
+}
