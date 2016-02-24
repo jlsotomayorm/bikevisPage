@@ -1,5 +1,6 @@
 # BikevisPage
 ##User Guide for Visual Analysis of Bike-Sharing Systems
+##Demo can be found at [BikeVis](http://jlsotomayorm.github.io/bikevisPage/) 
 
 ###Four views:
 
