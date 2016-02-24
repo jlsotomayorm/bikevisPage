@@ -12,7 +12,25 @@
 * The data may take a couple minutes to load
 
 ###Calendar View
-* Station data can be analyzed for a given day, days of the week, or different periods of the year
-* Rows can be ordered by any variable
-* Each station is represented as a row in the matrix and as a circle in the map
-* The current ordering is the top and last ten stations
+
+* The combobox "Display" change the current variable being displayed in the matrix.
+* The variable is mapped to a color using the color scale shown.
+* Use the combobox "Order" to change the row ordering by any variable.   
+ 
+![alt text](https://github.com/jlsotomayorm/bikevisPage/blob/gh-pages/imgs/variable.png)
+
+ Each station is represented as a row in the matrix ...
+ 
+![alt text](https://github.com/jlsotomayorm/bikevisPage/blob/gh-pages/imgs/calendarMatrix.png)
+
+and as a circle in the map. The matrix allows a 2d window selection. The vertical axis selects the stations and the horizontal span selects  months of the year.
+
+![alt text](https://github.com/jlsotomayorm/bikevisPage/blob/gh-pages/imgs/calendarMap.png)
+
+ The current ordering is the top and last ten stations
+ 
+![alt text](https://github.com/jlsotomayorm/bikevisPage/blob/gh-pages/imgs/ranking.png)
+
+###Day of Weeks View
+###Trips View
+###OD Matrix View
