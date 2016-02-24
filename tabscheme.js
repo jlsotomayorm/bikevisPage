@@ -1,7 +1,7 @@
 var modes = ["Analytics"];
 // var modesVisTabs = [["Stations Usage", "Day Of Week Models", "Flow Estimation"]];
 // var modesVisTabs = [["Calendar View", "Day Of Week Models", "Flow Estimation"]];
-var modesVisTabs = [["Calendar View", "Day Of Week Models", "Trips View","ODM View"]];
+var modesVisTabs = [["Calendar View", "Day Of Week Models", "Trips View","AM View"]];
 //var modesVisTabs = [["Trips View","AM View"]];
 
 var createTabScheme = function(dataManager) {
